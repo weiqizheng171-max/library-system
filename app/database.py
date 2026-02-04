@@ -7,9 +7,6 @@ from dotenv import load_dotenv
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-# ⚠️ 如果没有 .env，请取消下面这行的注释并填入你的密码
-# DATABASE_URL = "mysql+aiomysql://root:20011128@127.0.0.1:3306/library_system?charset=utf8mb4"
-
 # 🌟 修复版引擎配置
 engine = create_async_engine(
     DATABASE_URL,
